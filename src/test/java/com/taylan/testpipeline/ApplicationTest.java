@@ -21,7 +21,7 @@ class ApplicationTest {
         String hello = application.sayHello();
 
         //then
-        assertThat(hello).isEqualTo("sHello World!");
+        assertThat(hello).isEqualTo("Hello World!");
     }
 
     @Test
