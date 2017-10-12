@@ -6,7 +6,9 @@ public class Application {
         return "Hello World!";
     }
 
-    public void doSomeStupid() {
-        System.err.println("blabalbalbablabl");
+    public String doSomeStupid() {
+        String stupidWord = "balbalba";
+        System.out.println(stupidWord);
+        return stupidWord;
     }
 }

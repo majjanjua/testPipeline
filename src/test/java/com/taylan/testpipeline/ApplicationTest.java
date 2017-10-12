@@ -3,8 +3,6 @@ package com.taylan.testpipeline;
 import com.taylan.testpipeline.testconfig.extension.MockitoExtension;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InOrder;
-import org.mockito.Mockito;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -27,14 +25,12 @@ class ApplicationTest {
     @Test
     void should_do_something_stupid() {
         //given
-        Application mockApplication = Mockito.mock(Application.class);
+        Application application = new Application();
 
         //when
-        mockApplication.doSomeStupid();
+        String someStupid = application.doSomeStupid();
 
         //then
-        InOrder inOrder = Mockito.inOrder(mockApplication);
-        inOrder.verify(mockApplication).doSomeStupid();
-        inOrder.verifyNoMoreInteractions();
+        assertThat(someStupid).isEqualTo("balbalba");
     }
 }
