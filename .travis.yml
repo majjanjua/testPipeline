@@ -19,7 +19,7 @@ install:
 
 script:
   - 'mvn test jacoco:report'
-  - 'mvn sonar:sonar'
+  - 'mvn sonar:sonar -Pcoverage'  
 
 after_success:
   - 'bash <(curl -s https://codecov.io/bash)'
