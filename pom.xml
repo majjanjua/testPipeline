@@ -56,8 +56,6 @@
         <jacoco.ut.execution.data.file>${project.build.directory}/coverage-reports/jacoco-ut.exec</jacoco.ut.execution.data.file>
         <skip.integration.tests>true</skip.integration.tests>
         <skip.unit.tests>false</skip.unit.tests>
-    </properties>
-    <properties>
         <sonar.organization>majjanjua-3</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
      </properties>
