@@ -3,7 +3,9 @@ package com.taylan.testpipeline;
 public class Application {
 
     public String sayHello() {
-        return "Hello World!";
+        String stupidtestWord = "Hello World!";
+        System.out.println(stupidtestWord);
+        return stupidtestWord;
     }
 
     public String doSomeStupid() {
