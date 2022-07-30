@@ -4,13 +4,13 @@ public class Application {
 
     public String sayHello() {
         String stupidtestWord = "Hello World!";
-        System.out.println(stupidtestWord);
+        logger.log(stupidtestWord);
         return stupidtestWord;
     }
 
     public String doSomeStupid() {
         String stupidWord = "balbalba";
-        System.out.println(stupidWord);
+        logger.log(stupidWord);
         return stupidWord;
     }
 }
